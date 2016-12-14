@@ -4,7 +4,7 @@
         <title>Contact</title>
     </head>
     <body>
-        <?php require 'views/nav.view.php'; ?>
+        <?php require 'partials/nav.view.php'; ?>
         <h1>CONTACT</h1>
     </body>
 </html>

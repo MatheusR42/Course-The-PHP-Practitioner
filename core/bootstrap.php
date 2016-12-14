@@ -1,5 +1,5 @@
 <?php
-
+use App\Core\App;
 require 'core/functions.php';
 
 
@@ -15,7 +15,7 @@ App::bind('database', new QueryBuider(
 function view($name, $data = []){	
 	extract($data);
 
-	return require "views/{$name}.view.php";
+	return require "app/views/{$name}.view.php";
 }
 
 function redirect($path){

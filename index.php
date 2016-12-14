@@ -3,7 +3,7 @@
 require 'vendor/autoload.php';
 require 'core/bootstrap.php';
 
-//require Router::load('routes.php')->directs(Request::uri());
+use App\Core\{Router, Request};
 
-$router = Router::load('routes.php');
+$router = Router::load('app/routes.php');
 $router->directs(Request::uri(), Request::method());

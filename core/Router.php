@@ -1,5 +1,8 @@
 <?php
 
+
+namespace App\Core;
+
 class Router
 {
 
@@ -31,6 +34,11 @@ class Router
 
     protected function callAction($controller, $action)
     {
+        //Two slashs is to php read vars and do not show literaly
+        //e.g "App\Controller\{$controller}" will be like
+        //App\Controller\Class name
+
+        $controller = "App\\Controllers\\{$controller}";
 
         $controller = new $controller;
         

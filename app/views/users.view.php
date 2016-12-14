@@ -4,7 +4,7 @@
         <title>Users</title>
     </head>
     <body>
-        <?php require 'views/nav.view.php'; ?>
+        <?php require 'partials/nav.view.php'; ?>
         <!--<ul>
             <?php foreach($tasks as $task): ?>
             <li>
